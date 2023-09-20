@@ -30,9 +30,9 @@ def home():
     st.write("Vrms ph-n L1N Min (Minimum voltage measured between phase and neutral)")
     st.write("Vrms ph-n L1N Avg (Average voltage measured between phase and neutral)")
     st.write("Vrms ph-n L1N Max (Maximum voltage measured between phase and neutral) ")
-    st.write("Current L1 Min (Minimum current")
-    st.write("Current L1 Avg (Average current")
-    st.write("Current L1 Max (Maximum current")
+    st.write("Current L1 Min (Minimum current)")
+    st.write("Current L1 Avg (Average current)")
+    st.write("Current L1 Max (Maximum current)")
 def into():
     st.markdown('<div class="full-background"></div>', unsafe_allow_html=True)
    
@@ -157,24 +157,9 @@ def dashboard():
 
 def main():
     st.set_page_config(page_title="AI Based Energy Monitoring", page_icon=":electric_plug:")
-    st.markdown("<h1 class='it'>AI Based Energy Monitoring</h1>", unsafe_allow_html=True)
-    st.markdown("""
-    <style>
-    .full-background {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-image: url('img2.png'); 
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-    .it{
-        text-align: center; color: white;    
-    }
-    </style>
-""", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center; color: white;'>AI Based Energy Monitoring</h1>", unsafe_allow_html=True)
+    
+    
 # Create the tab layout
     tabs = ["Home", "Prediction",'Dashboard']
     page = st.sidebar.selectbox("Select a page", tabs)
