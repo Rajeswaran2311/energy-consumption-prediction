@@ -18,8 +18,9 @@ from keras.models import load_model
 
 # Define the home function
 def home():
+    st.header('AI Based Energy Monitoring')
+    
     st.write("## Introduction")
-   
     # imageha = mpimg.imread('stone.jpg')     
     # st.image(imageha)
     st.write("This app uses to monitoring energy consumptionof devcice and visualize flow of current over period of time .")
