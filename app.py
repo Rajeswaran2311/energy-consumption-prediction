@@ -56,7 +56,7 @@ def prediction():
     
 
 # Load the saved logistic regression model
-    model =load_model('BestEEE.h5')
+    model =load_model('bestEEE.h5')
     scaler = StandardScaler()
     data = scaler.fit_transform(data)
     data = data.reshape(1, data.shape[1], 1)
