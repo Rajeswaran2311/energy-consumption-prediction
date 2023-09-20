@@ -34,11 +34,12 @@ def home():
     st.write("Current L1 Min (Minimum current)")
     st.write("Current L1 Avg (Average current)")
     st.write("Current L1 Max (Maximum current)")
-def into():
-    st.markdown('<div class="full-background"></div>', unsafe_allow_html=True)
+
    
 # Define the prediction function
 def prediction():
+    st.header('AI Based Energy Monitoring')
+    st.subheader('Power Factor Predictor')
     
     st.write("Please fill in the following information to get a prediction:")
     
